@@ -124,20 +124,20 @@
 //7.Create a class called Person that has name and email properties, and a sendEmail method that takes in a message and sends an email to the person's email address. 
 //Create an instance of the Person class and call the sendEmail method with a message.
 
-class Person {
-    constructor(name, email) {
-        this.name = name;
-        this.email = email;
-    }
+// class Person {
+//     constructor(name, email) {
+//         this.name = name;
+//         this.email = email;
+//     }
 
-    sendEmail() {
-        console.log(`Dear ${this.name},  Please find attached the requested files`);
-    }
-}
+//     sendEmail() {
+//         console.log(`Dear ${this.name},  Please find attached the requested files`);
+//     }
+// }
 
-person1 = new Person('John', 'johnwick@gmail.com' );
+// person1 = new Person('John', 'johnwick@gmail.com' );
 
-person1.sendEmail()
+// person1.sendEmail()
 
 //8.Create a class called Product that has name, price, and description properties, and a discount method that takes in a percentage and returns the discounted price. 
 //Create an instance of the Product class and call the discount method with a percentage.
@@ -150,8 +150,13 @@ class Product {
     } 
 
 
-    discount() {
-
+    discount(X) {
+        let discountedPrice = this.price - (this.price*(x/100))
+        console.log(`Discounted price is $${discountedPrice}`);
     }
 }
+
+let discount = 20;
+let product1 = new Product ('Table', 100, 'For outdoor patio');
+product1.discount(discount)
 //Couldnt find the correct way to do it !
